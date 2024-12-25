@@ -5,6 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="app.js"></script>
   </head>
   <body>
     <nav
@@ -14,28 +22,142 @@
         <img src="../assets/asset 0.png" alt="ToDesktop Logo" />
         <span class="font-primary font-medium text-lg"> ToDesktop </span>
       </a>
+      <button
+        onclick="toggleMenu()"
+        id="menuButton"
+        class="md:hidden flex items-center gap-2 border py-2 px-2 rounded-lg border-gray-400 transition-all hover:bg-gray-100 hover:border-gray-500"
+      >
+        <svg
+          id="menuIcon"
+          class="h-6 w-6"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          aria-hidden="true"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+          />
+        </svg>
+        <svg
+          id="closeIcon"
+          class="h-6 w-6 hidden"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          aria-hidden="true"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M6 18L18 6M6 6l12 12"
+          />
+        </svg>
+      </button>
+
       <ul
-        class="flex justify-between items-center flex-1 gap-6 list-none m-0 px-8"
+        class="hidden md:flex justify-between items-center flex-1 gap-6 list-none m-0 px-8"
       >
         <li>
-          <a class="font-body" href="">Pricing</a>
+          <a class="font-body hover:text-sky-500 transition-all" href="">
+            Pricing</a
+          >
         </li>
         <li>
-          <a class="font-body" href="">Docs</a>
+          <a class="font-body hover:text-sky-500 transition-all" href=""
+            >Docs</a
+          >
         </li>
         <li>
-          <a class="font-body" href="">Changelog</a>
+          <a class="font-body hover:text-sky-500 transition-all" href=""
+            >Changelog</a
+          >
         </li>
         <li>
-          <a class="font-body" href="">Blogs</a>
+          <a class="font-body hover:text-sky-500 transition-all" href=""
+            >Blogs</a
+          >
         </li>
         <li>
-          <a class="font-body" href="">Login</a>
+          <a class="font-body hover:text-sky-500 transition-all" href=""
+            >Login</a
+          >
         </li>
       </ul>
-      <div class="flex flex-1 justify-end">
+      <!-- MENU FOR MOBILE DEVICE -->
+      <ul
+        id="mobileMenu"
+        class="hidden sm:flex md:hidden flex-col justify-center items-start flex-1 gap-3 list-none m-0 px-8 absolute top-16 left-0 w-full bg-white shadow-md rounded-lg py-4"
+      >
+        <li
+          class="group w-full p-2 px-3 hover:bg-gray-100 rounded-lg transition-all"
+        >
+          <a class="font-body group-hover:text-sky-500 transition-all" href="">
+            <i class="fa-solid fa-dollar-sign w-8"></i>Pricing</a
+          >
+        </li>
+        <li
+          class="group w-full p-2 px-3 hover:bg-gray-100 rounded-lg transition-all"
+        >
+          <a class="font-body group-hover:text-sky-500 transition-all" href=""
+            ><i class="fa-regular fa-file w-8"></i>Documentation</a
+          >
+        </li>
+        <li
+          class="group w-full p-2 px-3 hover:bg-gray-100 rounded-lg transition-all"
+        >
+          <a class="font-body group-hover:text-sky-500 transition-all" href=""
+            ><i class="fa-solid fa-clock-rotate-left w-8"></i>Changelog</a
+          >
+        </li>
+        <li
+          class="group w-full p-2 px-3 hover:bg-gray-100 rounded-lg transition-all"
+        >
+          <a class="font-body group-hover:text-sky-500 transition-all" href=""
+            ><i class="fa-regular fa-comment w-8"></i>Blogs</a
+          >
+        </li>
+        <li
+          class="group w-full p-2 px-3 hover:bg-gray-100 rounded-lg transition-all"
+        >
+          <a class="font-body group-hover:text-sky-500 transition-all" href=""
+            ><i class="fa-regular fa-user w-8"></i>Login</a
+          >
+        </li>
+        <div class="border-b-2 border-gray-300 w-full h-1"></div>
+        <div class="flex sm:flex md:hidden flex-1 justify-start w-full">
+          <button
+            class="flex items-center gap-2 py-2 px-3 rounded-lg transition-all hover:bg-gray-100 hover:border-gray-500"
+          >
+            <img class="pr-1" src="../assets/asset 1.svg" alt="" />
+            <span class="font-primary">Electron Developers</span>
+            <svg
+              width="14"
+              height="12"
+              viewBox="0 0 14 12"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0.8125 6H13.1875M13.1875 6L8.125 0.9375M13.1875 6L8.125 11.0625"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+        </div>
+      </ul>
+      <div class="hidden lg:flex flex-1 justify-end">
         <button
-          class="flex items-center gap-2 border py-2 px-6 rounded-lg border-gray-400 hover:bg-gray-100 hover:border-gray-500"
+          class="flex items-center gap-2 border py-2 px-6 rounded-lg border-gray-400 transition-all hover:bg-gray-100 hover:border-gray-500"
         >
           <img src="../assets/asset 1.svg" alt="" />
           <span class="font-primary">Electron Developers</span>

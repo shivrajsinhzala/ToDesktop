@@ -93,7 +93,7 @@
       <!-- MENU FOR MOBILE DEVICE -->
       <ul
         id="mobileMenu"
-        class="absolute left-0 flex-col items-start justify-center flex-1 hidden w-full gap-3 px-8 py-4 m-0 list-none bg-white rounded-lg shadow-md sm:flex md:hidden top-16"
+        class="absolute left-0 flex-col items-start justify-center flex-1 hidden w-full gap-3 px-8 py-4 m-0 list-none bg-white rounded-lg shadow-md sm:hidden md:hidden top-16"
       >
         <li
           class="w-full p-2 px-3 transition-all rounded-lg group hover:bg-gray-100"
@@ -131,9 +131,11 @@
           >
         </li>
         <div class="w-full h-1 border-b-2 border-gray-300"></div>
-        <div class="flex justify-start flex-1 w-full sm:flex md:hidden">
+        <div
+          class="flex justify-start flex-1 w-full transition-all rounded-lg group hover:bg-gray-100 hover:border-gray-500 sm:flex md:hidden"
+        >
           <button
-            class="flex items-center gap-2 px-3 py-2 transition-all rounded-lg hover:bg-gray-100 hover:border-gray-500"
+            class="flex items-center gap-2 px-3 py-2 transition-all rounded-lg group-hover:text-sky-500 group-hover:bg-gray-100 group-hover:border-gray-500"
           >
             <img class="pr-1" src="../assets/asset 1.svg" alt="" />
             <span class="font-primary">Electron Developers</span>

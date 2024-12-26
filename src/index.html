@@ -15,24 +15,18 @@
     <script src="app.js"></script>
   </head>
   <body>
-    <!-- Navigation Bar -->
     <nav
-      id="mainNavbar"
       class="flex items-center justify-between p-3 font-medium bg-white shadow-md font-primary"
     >
-      <!-- Logo and Branding -->
-      <a id="logo" href="#" class="flex items-center flex-1 gap-2">
+      <a href="#" class="flex items-center flex-1 gap-2">
         <img src="../assets/asset 0.png" alt="ToDesktop Logo" />
-        <span class="text-lg font-medium font-primary">ToDesktop</span>
+        <span class="text-lg font-medium font-primary"> ToDesktop </span>
       </a>
-
-      <!-- Mobile Menu Button -->
       <button
         onclick="toggleMenu()"
         id="menuButton"
         class="flex items-center gap-2 px-2 py-2 transition-all border border-gray-400 rounded-lg md:hidden hover:bg-gray-100 hover:border-gray-500"
       >
-        <!-- Menu Icon -->
         <svg
           id="menuIcon"
           class="w-6 h-6"
@@ -49,7 +43,6 @@
             d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
           />
         </svg>
-        <!-- Close Icon -->
         <svg
           id="closeIcon"
           class="hidden w-6 h-6"
@@ -68,39 +61,36 @@
         </svg>
       </button>
 
-      <!-- Desktop Menu -->
       <ul
-        id="desktopMenu"
         class="items-center justify-between flex-1 hidden gap-6 px-8 m-0 list-none md:flex"
       >
         <li>
-          <a class="transition-all font-body hover:text-sky-500" href="#"
-            >Pricing</a
+          <a class="transition-all font-body hover:text-sky-500" href="">
+            Pricing</a
           >
         </li>
         <li>
-          <a class="transition-all font-body hover:text-sky-500" href="#"
+          <a class="transition-all font-body hover:text-sky-500" href=""
             >Docs</a
           >
         </li>
         <li>
-          <a class="transition-all font-body hover:text-sky-500" href="#"
+          <a class="transition-all font-body hover:text-sky-500" href=""
             >Changelog</a
           >
         </li>
         <li>
-          <a class="transition-all font-body hover:text-sky-500" href="#"
+          <a class="transition-all font-body hover:text-sky-500" href=""
             >Blogs</a
           >
         </li>
         <li>
-          <a class="transition-all font-body hover:text-sky-500" href="#"
+          <a class="transition-all font-body hover:text-sky-500" href=""
             >Login</a
           >
         </li>
       </ul>
-
-      <!-- Mobile Menu -->
+      <!-- MENU FOR MOBILE DEVICE -->
       <ul
         id="mobileMenu"
         class="absolute left-0 flex-col items-start justify-center flex-1 hidden w-full gap-3 px-8 py-4 m-0 list-none bg-white rounded-lg shadow-md sm:hidden md:hidden top-16"
@@ -141,14 +131,37 @@
           >
         </li>
         <div class="w-full h-1 border-b-2 border-gray-300"></div>
+        <div
+          class="flex justify-start flex-1 w-full transition-all rounded-lg group hover:bg-gray-100 hover:border-gray-500 sm:flex md:hidden"
+        >
+          <button
+            class="flex items-center gap-2 px-3 py-2 transition-all rounded-lg group-hover:text-sky-500 group-hover:bg-gray-100 group-hover:border-gray-500"
+          >
+            <img class="pr-1" src="../assets/asset 1.svg" alt="" />
+            <span class="font-primary">Electron Developers</span>
+            <svg
+              width="14"
+              height="12"
+              viewBox="0 0 14 12"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0.8125 6H13.1875M13.1875 6L8.125 0.9375M13.1875 6L8.125 11.0625"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+        </div>
       </ul>
-
-      <!-- Call-to-Action Button -->
-      <div id="ctaButton" class="justify-end flex-1 hidden lg:flex">
+      <div class="justify-end flex-1 hidden lg:flex">
         <button
           class="flex items-center gap-2 px-6 py-2 transition-all border border-gray-400 rounded-lg hover:bg-gray-100 hover:border-gray-500"
         >
-          <img src="../assets/asset 1.svg" alt="Electron Developers Logo" />
+          <img src="../assets/asset 1.svg" alt="" />
           <span class="font-primary">Electron Developers</span>
           <svg
             width="14"

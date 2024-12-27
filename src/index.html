@@ -14,9 +14,9 @@
     />
     <script src="app.js"></script>
   </head>
-  <body>
-    <nav
-      class="flex items-center justify-between p-3 font-medium bg-white shadow-md font-primary"
+  <body class="overflow-x-hidden">
+    <div
+      class="sticky z-10 flex items-center justify-between p-3 font-medium bg-white shadow-lg font-primary"
     >
       <a href="#" class="flex items-center flex-1 gap-2">
         <img src="../assets/asset 0.png" alt="ToDesktop Logo" />
@@ -180,6 +180,413 @@
           </svg>
         </button>
       </div>
-    </nav>
+    </div>
+    <!-- Main Body Starts -->
+    <main>
+      <div
+        id="hero"
+        class="min-h-screen bg-gradient-to-r from-purple-50 via-orange-50 to-transparent"
+      >
+        <div
+          id="hero-container"
+          class="flex flex-col max-w-3xl px-6 pt-6 pb-32 mx-auto sm:items-center sm:text-center"
+        >
+          <div
+            id="version-text"
+            class="flex items-center gap-3 px-3 py-1 my-6 mt-12 transition-all border border-yellow-300 rounded-lg shadow-md group bg-yellow-50 w-fit hover:shadow-lg hover:border-yellow-400 hover:-translate-y-1"
+          >
+            <div
+              class="w-2 h-2 bg-yellow-500 border border-yellow-600 rounded-full"
+            ></div>
+            <p class="font-medium text-yellow-600 font-primary">
+              v0.21.1:
+              <span class="text-yellow-700">Find-in-page bug fixes</span>
+            </p>
+            <i
+              class="text-yellow-600 transition-all fa-solid fa-arrow-right group-hover:translate-x-1"
+            ></i>
+          </div>
+
+          <div id="features" class="flex items-center gap-8 m-4 text-gray-500">
+            <span>
+              <i class="px-1 fa-regular fa-file-code"></i>
+              <span> Code Optional </span>
+            </span>
+            <span>
+              <i class="px-1 fa-solid fa-hand-back-fist"></i>
+              <span> Drag & drop builder </span>
+            </span>
+            <span>
+              <i class="px-1 fa-solid fa-laptop"></i>
+              <span> Windows, Mac, Linux </span>
+            </span>
+          </div>
+          <div
+            id="main-text"
+            class="mt-4 text-6xl font-semibold leading-[4rem] text-gray-800 font-primary"
+          >
+            Web app to desktop app in minutes
+          </div>
+          <p id="sub-text" class="px-4 mt-8 text-xl text-gray-500 md:px-20">
+            Take your web app codebase and transform it into a cross platform
+            desktop app with native functionality.
+          </p>
+          <div
+            id="buttons-container"
+            class="flex flex-col gap-4 mt-12 sm:flex-row"
+          >
+            <button
+              class="px-8 py-3 font-semibold text-white border rounded-lg shadow-sm bg-primary hover:bg-opacity-90"
+            >
+              Download Now
+            </button>
+            <button
+              class="px-8 py-3 font-semibold bg-white border border-gray-400 rounded-lg hover:bg-gray-800"
+            >
+              Read Docs
+            </button>
+          </div>
+          <div
+            id="ourClients"
+            class="self-center mt-20 font-semibold text-slate-900"
+          >
+            <div id="Companies Title" class="flex items-center justify-center">
+              <img src="../assets/asset 2.svg" alt="" class="mt-4" />
+              <span class="">APPS POWERED BY TODESKTOP</span>
+              <img
+                src="../assets/asset 2.svg"
+                alt=""
+                class="mt-4 -scale-x-100"
+              />
+            </div>
+            <!-- Company List 1 -->
+
+            <div
+              id="CompaniesList1"
+              class="flex items-center justify-center gap-4 mt-8 -translate-x-96"
+            >
+              <div
+                class="w-32 h-32 p-8 bg-white border border-gray-300 rounded-2xl"
+              >
+                <img class="-mt-4" src="../assets/asset 3.png" alt="" />
+                <p class="mt-2">Cursor</p>
+              </div>
+              <div
+                class="w-32 h-32 p-8 bg-white border border-gray-300 rounded-2xl"
+              >
+                <img class="-mt-4" src="../assets/asset 4.png" alt="" />
+                <p class="mt-2">Badseah</p>
+              </div>
+              <div
+                class="w-32 h-32 p-8 bg-white border border-gray-300 rounded-2xl"
+              >
+                <img class="-mt-4" src="../assets/asset 5.png" alt="" />
+                <p class="mt-2">Wavely</p>
+              </div>
+              <div
+                class="w-32 h-32 p-8 bg-white border border-gray-300 rounded-2xl"
+              >
+                <img class="-mt-4" src="../assets/asset 6.png" alt="" />
+                <p class="mt-2">Ramdno</p>
+              </div>
+              <div
+                class="w-32 h-32 p-8 bg-white border border-gray-300 rounded-2xl"
+              >
+                <img class="-mt-4" src="../assets/asset 7.png" alt="" />
+                <p class="mt-2">Sjupe</p>
+              </div>
+              <div
+                class="w-32 h-32 p-8 bg-white border border-gray-300 rounded-2xl"
+              >
+                <img class="-mt-4" src="../assets/asset 8.png" alt="" />
+                <p class="mt-2">Waylo</p>
+              </div>
+              <div
+                class="w-32 h-32 p-8 bg-white border border-gray-300 rounded-2xl"
+              >
+                <img class="-mt-4" src="../assets/asset 9.png" alt="" />
+                <p class="mt-2">classi</p>
+              </div>
+              <div
+                class="w-32 h-32 p-8 bg-white border border-gray-300 rounded-2xl"
+              >
+                <img class="-mt-4" src="../assets/asset 10.png" alt="" />
+                <p class="mt-2">RusiUp</p>
+              </div>
+              <div
+                class="w-32 h-32 p-8 bg-white border border-gray-300 rounded-2xl"
+              >
+                <img class="-mt-4" src="../assets/asset 11.png" alt="" />
+                <p class="mt-2">Lorem</p>
+              </div>
+              <div
+                class="w-32 h-32 p-8 bg-white border border-gray-300 rounded-2xl"
+              >
+                <img class="-mt-4" src="../assets/asset 12.png" alt="" />
+                <p class="mt-2">Ipsum</p>
+              </div>
+              <div
+                class="w-32 h-32 p-8 bg-white border border-gray-300 rounded-2xl"
+              >
+                <img class="-mt-4" src="../assets/asset 13.png" alt="" />
+                <p class="mt-2">Dolor</p>
+              </div>
+              <div
+                class="w-32 h-32 p-8 bg-white border border-gray-300 rounded-2xl"
+              >
+                <img class="-mt-4" src="../assets/asset 14.png" alt="" />
+                <p class="mt-2">amet</p>
+              </div>
+              <div
+                class="w-32 h-32 p-8 bg-white border border-gray-300 rounded-2xl"
+              >
+                <img class="-mt-4" src="../assets/asset 15.png" alt="" />
+                <p class="mt-2">Lonada</p>
+              </div>
+              <div
+                class="w-32 h-32 p-8 bg-white border border-gray-300 rounded-2xl"
+              >
+                <img class="-mt-4" src="../assets/asset 16.png" alt="" />
+                <p class="mt-2">alt</p>
+              </div>
+              <div
+                class="w-32 h-32 p-8 bg-white border border-gray-300 rounded-2xl"
+              >
+                <img class="-mt-4" src="../assets/asset 17.png" alt="" />
+                <p class="mt-2">Sit</p>
+              </div>
+              <div
+                class="w-32 h-32 p-8 bg-white border border-gray-300 rounded-2xl"
+              >
+                <img class="-mt-4" src="../assets/asset 18.png" alt="" />
+                <p class="mt-2">Lorem</p>
+              </div>
+              <div
+                class="w-32 h-32 p-8 bg-white border border-gray-300 rounded-2xl"
+              >
+                <img class="-mt-4" src="../assets/asset 19.png" alt="" />
+                <p class="mt-2">Imsum</p>
+              </div>
+            </div>
+            <!-- company list 2 -->
+            <div
+              id="CompaniesList2"
+              class="flex items-center justify-center gap-4 mt-8 translate-x-96"
+            >
+              <div
+                class="w-32 h-32 p-8 bg-white border border-gray-300 rounded-2xl"
+              >
+                <img class="-mt-4" src="../assets/asset 3.png" alt="" />
+                <p class="mt-2">Cursor</p>
+              </div>
+              <div
+                class="w-32 h-32 p-8 bg-white border border-gray-300 rounded-2xl"
+              >
+                <img class="-mt-4" src="../assets/asset 4.png" alt="" />
+                <p class="mt-2">Badseah</p>
+              </div>
+              <div
+                class="w-32 h-32 p-8 bg-white border border-gray-300 rounded-2xl"
+              >
+                <img class="-mt-4" src="../assets/asset 5.png" alt="" />
+                <p class="mt-2">Wavely</p>
+              </div>
+              <div
+                class="w-32 h-32 p-8 bg-white border border-gray-300 rounded-2xl"
+              >
+                <img class="-mt-4" src="../assets/asset 6.png" alt="" />
+                <p class="mt-2">Ramdno</p>
+              </div>
+              <div
+                class="w-32 h-32 p-8 bg-white border border-gray-300 rounded-2xl"
+              >
+                <img class="-mt-4" src="../assets/asset 7.png" alt="" />
+                <p class="mt-2">Sjupe</p>
+              </div>
+              <div
+                class="w-32 h-32 p-8 bg-white border border-gray-300 rounded-2xl"
+              >
+                <img class="-mt-4" src="../assets/asset 8.png" alt="" />
+                <p class="mt-2">Waylo</p>
+              </div>
+              <div
+                class="w-32 h-32 p-8 bg-white border border-gray-300 rounded-2xl"
+              >
+                <img class="-mt-4" src="../assets/asset 9.png" alt="" />
+                <p class="mt-2">classi</p>
+              </div>
+              <div
+                class="w-32 h-32 p-8 bg-white border border-gray-300 rounded-2xl"
+              >
+                <img class="-mt-4" src="../assets/asset 10.png" alt="" />
+                <p class="mt-2">RusiUp</p>
+              </div>
+              <div
+                class="w-32 h-32 p-8 bg-white border border-gray-300 rounded-2xl"
+              >
+                <img class="-mt-4" src="../assets/asset 11.png" alt="" />
+                <p class="mt-2">Lorem</p>
+              </div>
+              <div
+                class="w-32 h-32 p-8 bg-white border border-gray-300 rounded-2xl"
+              >
+                <img class="-mt-4" src="../assets/asset 12.png" alt="" />
+                <p class="mt-2">Ipsum</p>
+              </div>
+              <div
+                class="w-32 h-32 p-8 bg-white border border-gray-300 rounded-2xl"
+              >
+                <img class="-mt-4" src="../assets/asset 13.png" alt="" />
+                <p class="mt-2">Dolor</p>
+              </div>
+              <div
+                class="w-32 h-32 p-8 bg-white border border-gray-300 rounded-2xl"
+              >
+                <img class="-mt-4" src="../assets/asset 14.png" alt="" />
+                <p class="mt-2">amet</p>
+              </div>
+              <div
+                class="w-32 h-32 p-8 bg-white border border-gray-300 rounded-2xl"
+              >
+                <img class="-mt-4" src="../assets/asset 15.png" alt="" />
+                <p class="mt-2">Lonada</p>
+              </div>
+              <div
+                class="w-32 h-32 p-8 bg-white border border-gray-300 rounded-2xl"
+              >
+                <img class="-mt-4" src="../assets/asset 16.png" alt="" />
+                <p class="mt-2">alt</p>
+              </div>
+              <div
+                class="w-32 h-32 p-8 bg-white border border-gray-300 rounded-2xl"
+              >
+                <img class="-mt-4" src="../assets/asset 17.png" alt="" />
+                <p class="mt-2">Sit</p>
+              </div>
+              <div
+                class="w-32 h-32 p-8 bg-white border border-gray-300 rounded-2xl"
+              >
+                <img class="-mt-4" src="../assets/asset 18.png" alt="" />
+                <p class="mt-2">Lorem</p>
+              </div>
+              <div
+                class="w-32 h-32 p-8 bg-white border border-gray-300 rounded-2xl"
+              >
+                <img class="-mt-4" src="../assets/asset 19.png" alt="" />
+                <p class="mt-2">Imsum</p>
+              </div>
+            </div>
+            <!-- company list 3 -->
+            <div
+              id="CompaniesList3"
+              class="items-center justify-center hidden gap-4 mt-8 md:hidden sm:flex -translate-x-96"
+            >
+              <div
+                class="w-32 h-32 p-8 bg-white border border-gray-300 rounded-2xl"
+              >
+                <img class="-mt-4" src="../assets/asset 3.png" alt="" />
+                <p class="mt-2">Cursor</p>
+              </div>
+              <div
+                class="w-32 h-32 p-8 bg-white border border-gray-300 rounded-2xl"
+              >
+                <img class="-mt-4" src="../assets/asset 4.png" alt="" />
+                <p class="mt-2">Badseah</p>
+              </div>
+              <div
+                class="w-32 h-32 p-8 bg-white border border-gray-300 rounded-2xl"
+              >
+                <img class="-mt-4" src="../assets/asset 5.png" alt="" />
+                <p class="mt-2">Wavely</p>
+              </div>
+              <div
+                class="w-32 h-32 p-8 bg-white border border-gray-300 rounded-2xl"
+              >
+                <img class="-mt-4" src="../assets/asset 6.png" alt="" />
+                <p class="mt-2">Ramdno</p>
+              </div>
+              <div
+                class="w-32 h-32 p-8 bg-white border border-gray-300 rounded-2xl"
+              >
+                <img class="-mt-4" src="../assets/asset 7.png" alt="" />
+                <p class="mt-2">Sjupe</p>
+              </div>
+              <div
+                class="w-32 h-32 p-8 bg-white border border-gray-300 rounded-2xl"
+              >
+                <img class="-mt-4" src="../assets/asset 8.png" alt="" />
+                <p class="mt-2">Waylo</p>
+              </div>
+              <div
+                class="w-32 h-32 p-8 bg-white border border-gray-300 rounded-2xl"
+              >
+                <img class="-mt-4" src="../assets/asset 9.png" alt="" />
+                <p class="mt-2">classi</p>
+              </div>
+              <div
+                class="w-32 h-32 p-8 bg-white border border-gray-300 rounded-2xl"
+              >
+                <img class="-mt-4" src="../assets/asset 10.png" alt="" />
+                <p class="mt-2">RusiUp</p>
+              </div>
+              <div
+                class="w-32 h-32 p-8 bg-white border border-gray-300 rounded-2xl"
+              >
+                <img class="-mt-4" src="../assets/asset 11.png" alt="" />
+                <p class="mt-2">Lorem</p>
+              </div>
+              <div
+                class="w-32 h-32 p-8 bg-white border border-gray-300 rounded-2xl"
+              >
+                <img class="-mt-4" src="../assets/asset 12.png" alt="" />
+                <p class="mt-2">Ipsum</p>
+              </div>
+              <div
+                class="w-32 h-32 p-8 bg-white border border-gray-300 rounded-2xl"
+              >
+                <img class="-mt-4" src="../assets/asset 13.png" alt="" />
+                <p class="mt-2">Dolor</p>
+              </div>
+              <div
+                class="w-32 h-32 p-8 bg-white border border-gray-300 rounded-2xl"
+              >
+                <img class="-mt-4" src="../assets/asset 14.png" alt="" />
+                <p class="mt-2">amet</p>
+              </div>
+              <div
+                class="w-32 h-32 p-8 bg-white border border-gray-300 rounded-2xl"
+              >
+                <img class="-mt-4" src="../assets/asset 15.png" alt="" />
+                <p class="mt-2">Lonada</p>
+              </div>
+              <div
+                class="w-32 h-32 p-8 bg-white border border-gray-300 rounded-2xl"
+              >
+                <img class="-mt-4" src="../assets/asset 16.png" alt="" />
+                <p class="mt-2">alt</p>
+              </div>
+              <div
+                class="w-32 h-32 p-8 bg-white border border-gray-300 rounded-2xl"
+              >
+                <img class="-mt-4" src="../assets/asset 17.png" alt="" />
+                <p class="mt-2">Sit</p>
+              </div>
+              <div
+                class="w-32 h-32 p-8 bg-white border border-gray-300 rounded-2xl"
+              >
+                <img class="-mt-4" src="../assets/asset 18.png" alt="" />
+                <p class="mt-2">Lorem</p>
+              </div>
+              <div
+                class="w-32 h-32 p-8 bg-white border border-gray-300 rounded-2xl"
+              >
+                <img class="-mt-4" src="../assets/asset 19.png" alt="" />
+                <p class="mt-2">Imsum</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
   </body>
 </html>

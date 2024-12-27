@@ -30,6 +30,6 @@ window.addEventListener("scroll", () => {
   }
 
   document.getElementById("CompaniesList3").style.transform = `translateX(${
-    window.scrollY / 3.14 - 382
+    window.scrollY / 3.14 - 1000
   }px)`;
 });

@@ -19,10 +19,9 @@ window.addEventListener("scroll", () => {
     return;
   }
 
-  document.getElementById("CompaniesList2").style.transform = `translateX(${-(
-    window.scrollY / 3.14 -
-    384
-  )}px)`;
+  document.getElementById("CompaniesList2").style.transform = `translateX(${
+    -window.scrollY / 3.14 - 384
+  }px)`;
 });
 window.addEventListener("scroll", () => {
   if (document.getElementById("CompaniesList3") == null || undefined) {
@@ -30,6 +29,6 @@ window.addEventListener("scroll", () => {
   }
 
   document.getElementById("CompaniesList3").style.transform = `translateX(${
-    window.scrollY / 3.14 - 1000
+    window.scrollY / 3.14 - 390
   }px)`;
 });

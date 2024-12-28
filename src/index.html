@@ -182,18 +182,19 @@
       </div>
     </div>
     <!-- Main Body Starts -->
-    <main>
+    <main class="overflow-x-hidden">
       <div
         id="hero"
-        class="min-h-screen bg-gradient-to-r from-purple-50 via-orange-50 to-transparent"
+        class="min-h-screen bg-gradient-to-b from-purple-50 via-orange-50 to-transparent"
       >
+        <!-- hero section -->
         <div
           id="hero-container"
-          class="flex flex-col max-w-3xl px-6 pt-6 pb-32 mx-auto sm:items-center sm:text-center"
+          class="flex flex-col max-w-3xl px-6 pt-6 mx-auto pb-14 md:pb-24 sm:items-center sm:text-center"
         >
           <div
             id="version-text"
-            class="flex items-center gap-3 px-3 py-1 my-6 mt-12 transition-all border border-yellow-300 rounded-lg shadow-md group bg-yellow-50 w-fit hover:shadow-lg hover:border-yellow-400 hover:-translate-y-1"
+            class="flex items-center self-center gap-3 px-3 py-1 my-6 mt-12 transition-all border border-yellow-300 rounded-lg shadow-md group bg-yellow-50 w-fit hover:shadow-lg hover:border-yellow-400 hover:-translate-y-1"
           >
             <div
               class="w-2 h-2 bg-yellow-500 border border-yellow-600 rounded-full"
@@ -207,23 +208,35 @@
             ></i>
           </div>
 
-          <div id="features" class="flex items-center gap-8 m-4 text-gray-500">
-            <span>
-              <i class="px-1 fa-regular fa-file-code"></i>
+          <div
+            id="features"
+            class="flex gap-8 m-4 text-gray-500 sm:items-start md:items-center"
+          >
+            <span class="flex flex-col lg:flex-row">
+              <i
+                class="py-1 pr-2 whitespace-pre-line fa-regular fa-file-code"
+              ></i>
               <span> Code Optional </span>
             </span>
-            <span>
-              <i class="px-1 fa-solid fa-hand-back-fist"></i>
-              <span> Drag & drop builder </span>
+            <span class="flex flex-col lg:flex-row">
+              <i
+                class="py-1 pr-2 whitespace-pre-line fa-solid fa-hand-back-fist"
+              ></i>
+              <span class="text-nowrap"
+                >Drag & drop
+                <span class="whitespace-pre-line lg:whitespace-normal">
+                  builder</span
+                >
+              </span>
             </span>
-            <span>
-              <i class="px-1 fa-solid fa-laptop"></i>
-              <span> Windows, Mac, Linux </span>
+            <span class="flex flex-col lg:flex-row">
+              <i class="py-1 pr-2 whitespace-pre-line fa-solid fa-laptop"></i>
+              <span class=""> Windows, Mac, Linux </span>
             </span>
           </div>
           <div
             id="main-text"
-            class="mt-4 text-6xl font-semibold leading-[4rem] text-gray-800 font-primary"
+            class="pl-4 leading-tight mt-4 text-5xl md:text-5xl lg:text-6xl font-semibold md:leading-[4rem] text-gray-800 font-primary"
           >
             Web app to desktop app in minutes
           </div>
@@ -231,6 +244,7 @@
             Take your web app codebase and transform it into a cross platform
             desktop app with native functionality.
           </p>
+          <!-- download buttons -->
           <div
             id="buttons-container"
             class="flex flex-col gap-4 mt-12 sm:flex-row"
@@ -241,11 +255,12 @@
               Download Now
             </button>
             <button
-              class="px-8 py-3 font-semibold bg-white border border-gray-400 rounded-lg hover:bg-gray-800"
+              class="px-8 py-3 font-semibold bg-white border border-gray-400 rounded-lg hover:bg-gray-200"
             >
               Read Docs
             </button>
           </div>
+          <!-- ourclient section -->
           <div
             id="ourClients"
             class="self-center mt-20 font-semibold text-slate-900"
@@ -263,7 +278,7 @@
 
             <div
               id="CompaniesList1"
-              class="flex items-center justify-center gap-4 mt-8 -translate-x-96"
+              class="flex items-center justify-center gap-4 mt-8 transition-transform ease-linear -translate-x-96"
             >
               <div
                 class="w-32 h-32 p-8 bg-white border border-gray-300 rounded-2xl"
@@ -371,7 +386,7 @@
             <!-- company list 2 -->
             <div
               id="CompaniesList2"
-              class="flex items-center justify-center gap-4 mt-8 translate-x-96"
+              class="flex items-center justify-center gap-4 mt-8 transition-transform ease-linear translate-x-96"
             >
               <div
                 class="w-32 h-32 p-8 bg-white border border-gray-300 rounded-2xl"
@@ -479,7 +494,7 @@
             <!-- company list 3 -->
             <div
               id="CompaniesList3"
-              class="flex items-center justify-center gap-4 mt-8 md:hidden sm:flex"
+              class="flex items-center justify-center gap-4 mt-8 transition-transform ease-linear md:hidden sm:flex"
             >
               <div
                 class="w-32 h-32 p-8 bg-white border border-gray-300 rounded-2xl"
@@ -583,6 +598,197 @@
                 <img class="-mt-4" src="../assets/asset 19.png" alt="" />
                 <p class="mt-2">Imsum</p>
               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="howitworks" class="">
+        <div
+          id="howitworks-container"
+          class="flex flex-col w-[90%] px-3 lg:px-6 pt-6 gap-4 lg:pb-32 mx-auto sm:items-start sm:text-left"
+        >
+          <div
+            id="howitworks-title"
+            class="pb-8 text-4xl font-semibold text-gray-800 md:pb-20 lg:text-5xl font-primary"
+          >
+            How it works
+          </div>
+          <div
+            id="stepcontainer1"
+            class="flex flex-col min-w-full gap-6 px-6 py-6 mx-auto border border-gray-200 lg:items-center lg:flex-row rounded-xl"
+          >
+            <div
+              id="info-container"
+              class="flex flex-col items-start justify-center gap-6 px-3 py-8 lg:pl-6 lg:w-1/2"
+            >
+              <div
+                id="step"
+                class="px-3 py-1 font-medium text-yellow-800 border border-yellow-300 rounded-lg font-primary bg-yellow-50 w-fit"
+              >
+                Step 1
+              </div>
+              <div id="step text" class="text-2xl font-medium lg:text-4xl">
+                Bootstrap straight from your web app
+              </div>
+              <div id="step-text-info" class="text-lg text-gray-500 lg:text-xl">
+                Copy and paste your web app url into ToDesktop. Customise your
+                app design, app icon and window frame UI with no code.
+              </div>
+              <div
+                id="step-text-features "
+                class="grid self-start gap-4 md:grid-cols-2 gap-x-12 lg:gap-x-16 text-nowrap md:self-start"
+              >
+                <span class="text-gray-800 border-b-2"
+                  ><i class="pr-4 text-gray-600 fa-solid fa-check"></i>Multiple
+                  Windows</span
+                >
+                <span class="text-gray-800 border-b-2"
+                  ><i class="pr-4 text-gray-600 fa-solid fa-check"></i>Multiple
+                  Windows</span
+                >
+                <span class="text-gray-800 border-b-2"
+                  ><i class="pr-4 text-gray-600 fa-solid fa-check"></i>Multiple
+                  Windows</span
+                >
+
+                <span class="text-gray-800 border-b-2"
+                  ><i class="pr-4 text-gray-600 fa-solid fa-check"></i>Multiple
+                  Windows</span
+                >
+                <span class="text-gray-800 border-b-2"
+                  ><i class="pr-4 text-gray-600 fa-solid fa-check"></i>Multiple
+                  Windows</span
+                >
+                <span class="text-gray-800 border-b-2"
+                  ><i class="pr-4 text-gray-600 fa-solid fa-check"></i>Multiple
+                  Windows</span
+                >
+              </div>
+            </div>
+            <div id="imageContainer" class="self-center lg:ml-10 lg:w-1/2">
+              <img
+                src="https://anuj-kumar-sharma.github.io/tailwind-landing-page/assets/asset%2066.svg"
+                alt=""
+              />
+            </div>
+          </div>
+          <div
+            id="stepcontainer3"
+            class="flex flex-col min-w-full gap-6 px-6 py-6 mx-auto border border-gray-200 lg:items-center lg:flex-row rounded-xl"
+          >
+            <div
+              id="info-container"
+              class="flex flex-col items-start justify-center gap-6 px-3 py-8 lg:pl-6 lg:w-1/2"
+            >
+              <div
+                id="step"
+                class="px-3 py-1 font-medium text-yellow-800 border border-yellow-300 rounded-lg font-primary bg-yellow-50 w-fit"
+              >
+                Step 2
+              </div>
+              <div id="step text" class="text-2xl font-medium lg:text-4xl">
+                Lorem ipsum dolor sit amet.
+              </div>
+              <div id="step-text-info" class="text-lg text-gray-500 lg:text-xl">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam
+                perferendis ipsa optio veniam animi blanditiis quibusdam
+                veritatis sed similique maxime?
+              </div>
+              <div
+                id="step-text-features "
+                class="grid self-start gap-4 md:grid-cols-2 gap-x-12 lg:gap-x-16 text-nowrap md:self-start"
+              >
+                <span class="text-gray-800 border-b-2"
+                  ><i class="pr-4 text-gray-600 fa-solid fa-check"></i>Multiple
+                  Windows</span
+                >
+                <span class="text-gray-800 border-b-2"
+                  ><i class="pr-4 text-gray-600 fa-solid fa-check"></i>Multiple
+                  Windows</span
+                >
+                <span class="text-gray-800 border-b-2"
+                  ><i class="pr-4 text-gray-600 fa-solid fa-check"></i>Multiple
+                  Windows</span
+                >
+
+                <span class="text-gray-800 border-b-2"
+                  ><i class="pr-4 text-gray-600 fa-solid fa-check"></i>Multiple
+                  Windows</span
+                >
+                <span class="text-gray-800 border-b-2"
+                  ><i class="pr-4 text-gray-600 fa-solid fa-check"></i>Multiple
+                  Windows</span
+                >
+                <span class="text-gray-800 border-b-2"
+                  ><i class="pr-4 text-gray-600 fa-solid fa-check"></i>Multiple
+                  Windows</span
+                >
+              </div>
+            </div>
+            <div id="imageContainer" class="self-center lg:ml-10 lg:w-1/2">
+              <img
+                src="https://anuj-kumar-sharma.github.io/tailwind-landing-page/assets/asset%2066.svg"
+                alt=""
+              />
+            </div>
+          </div>
+          <div
+            id="stepcontainer2"
+            class="flex flex-col min-w-full gap-6 px-6 py-6 mx-auto border border-gray-200 lg:items-center lg:flex-row rounded-xl"
+          >
+            <div
+              id="info-container"
+              class="flex flex-col items-start justify-center gap-6 px-3 py-8 lg:pl-6 lg:w-1/2"
+            >
+              <div
+                id="step"
+                class="px-3 py-1 font-medium text-yellow-800 border border-yellow-300 rounded-lg font-primary bg-yellow-50 w-fit"
+              >
+                Step 3
+              </div>
+              <div id="step text" class="text-2xl font-medium lg:text-4xl">
+                Bootstrap backwards from your application app
+              </div>
+              <div id="step-text-info" class="text-lg text-gray-500 lg:text-xl">
+                Copy and paste your web app url into ToDesktop. Customise your
+                app design, app icon and window frame UI with no code.
+              </div>
+              <div
+                id="step-text-features "
+                class="grid self-start gap-4 md:grid-cols-2 gap-x-12 lg:gap-x-16 text-nowrap md:self-start"
+              >
+                <span class="text-gray-800 border-b-2"
+                  ><i class="pr-4 text-gray-600 fa-solid fa-check"></i>Multiple
+                  Windows</span
+                >
+                <span class="text-gray-800 border-b-2"
+                  ><i class="pr-4 text-gray-600 fa-solid fa-check"></i>Multiple
+                  Windows</span
+                >
+                <span class="text-gray-800 border-b-2"
+                  ><i class="pr-4 text-gray-600 fa-solid fa-check"></i>Multiple
+                  Windows</span
+                >
+
+                <span class="text-gray-800 border-b-2"
+                  ><i class="pr-4 text-gray-600 fa-solid fa-check"></i>Multiple
+                  Windows</span
+                >
+                <span class="text-gray-800 border-b-2"
+                  ><i class="pr-4 text-gray-600 fa-solid fa-check"></i>Multiple
+                  Windows</span
+                >
+                <span class="text-gray-800 border-b-2"
+                  ><i class="pr-4 text-gray-600 fa-solid fa-check"></i>Multiple
+                  Windows</span
+                >
+              </div>
+            </div>
+            <div id="imageContainer" class="self-center lg:ml-10 lg:w-1/2">
+              <img
+                src="https://anuj-kumar-sharma.github.io/tailwind-landing-page/assets/asset%2066.svg"
+                alt=""
+              />
             </div>
           </div>
         </div>

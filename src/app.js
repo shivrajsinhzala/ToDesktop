@@ -11,7 +11,7 @@ function toggleMenu() {
 
 window.addEventListener("scroll", () => {
   document.getElementById("CompaniesList1").style.transform = `translateX(${
-    window.scrollY / 3.14 - 384
+    window.scrollY / 3.14 - 160
   }px)`;
 });
 window.addEventListener("scroll", () => {
@@ -20,7 +20,7 @@ window.addEventListener("scroll", () => {
   }
 
   document.getElementById("CompaniesList2").style.transform = `translateX(${
-    -window.scrollY / 3.14 - 384
+    -window.scrollY / 5 - 160
   }px)`;
 });
 window.addEventListener("scroll", () => {
@@ -29,6 +29,6 @@ window.addEventListener("scroll", () => {
   }
 
   document.getElementById("CompaniesList3").style.transform = `translateX(${
-    window.scrollY / 3.14 - 390
+    window.scrollY / 3.14 - 160
   }px)`;
 });

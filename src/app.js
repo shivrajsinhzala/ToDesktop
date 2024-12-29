@@ -31,4 +31,8 @@ window.addEventListener("scroll", () => {
   document.getElementById("CompaniesList3").style.transform = `translateX(${
     window.scrollY / 3.14 - 160
   }px)`;
+
+  document.getElementById("line4").style.transform = `translateX(${
+    -window.scrollY / 3 + 1500
+  }px)`;
 });

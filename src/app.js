@@ -36,3 +36,18 @@ window.addEventListener("scroll", () => {
     -window.scrollY / 3 + 1500
   }px)`;
 });
+
+const dtElements = document.querySelectorAll("dt");
+
+dtElements.forEach((item) => {
+  console.log("asda");
+  item.addEventListener("click", () => {
+    console.log("wasd");
+    const ddID = item.getAttribute("aria-controls");
+    const ddElement = document.getElementById(ddID);
+    const arrowIcon = item.querySelectorAll("i")[0];
+
+    ddElement.classList.toggle("hidden");
+    arrowIcon.classList.toggle("-rotate-180");
+  });
+});

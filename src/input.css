@@ -14,4 +14,16 @@
     @apply font-medium;
     @apply text-gray-800;
   }
+  .reddit {
+    @apply bg-red-600;
+  }
+  .anchor-hover {
+    @apply border-b border-dotted border-y-gray-300 hover:border-solid hover:border-gray-500;
+  }
+  .gradient-hover-outer {
+    @apply bg-slate-200 hover:bg-gradient-to-br from-red-200 via-purple-200 to-yellow-200 p-[1px];
+  }
+  .gradient-hover-inner {
+    @apply w-full bg-slate-50 h-full group-hover:bg-gradient-to-br from-red-50 via-purple-50 to-yellow-50;
+  }
 }

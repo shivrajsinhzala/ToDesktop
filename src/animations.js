@@ -189,9 +189,29 @@ gsap.from("#customers-features", {
   },
 });
 
-gsap.from("#main-text", {
-  duration: 0.5,
-  // transform: translateY(0,100%),
-  transform: translate(0, 100000),
+gsap.from(".char", {
+  y: 20,
+  duration: 0.05,
   opacity: 0,
+  stagger: 0.03,
+  delay: 0.5,
+});
+
+// gsap.from("#main-text", {
+//   duration: 0.5,
+//   // transform: translateY(0,100%),
+//   transform: translate(0, 100000),
+//   opacity: 0,
+// });
+
+document.addEventListener("mousemove", (e) => {
+  const x = e.pageX;
+  const y = e.pageY;
+
+  // console.log(e);
+  gsap.to("#cursor", {
+    x: x - 8,
+    y: y - 8,
+    duration: 1,
+  });
 });

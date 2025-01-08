@@ -6,6 +6,8 @@ function toggleMenu() {
   document.getElementById("mobileMenu").classList.toggle("flex");
 }
 
+const heading = new SplitType("#main-text");
+
 // function toggleMenu() {
 //   document.getElementById("some").classList.toggle("hidden");
 // }
@@ -41,9 +43,7 @@ window.addEventListener("scroll", () => {
 const dtElements = document.querySelectorAll("dt");
 
 dtElements.forEach((item) => {
-  console.log("asda");
   item.addEventListener("click", () => {
-    console.log("wasd");
     const ddID = item.getAttribute("aria-controls");
     const ddElement = document.getElementById(ddID);
     const arrowIcon = item.querySelectorAll("i")[0];

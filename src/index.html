@@ -12,10 +12,26 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+      integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+      defer
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+      integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+      defer
+    ></script>
     <script src="app.js" defer></script>
+    <script src="animations.js" defer></script>
   </head>
   <body class="overflow-x-hidden">
     <div
+      id="navigationPanel"
       class="sticky z-10 flex items-center justify-between p-3 font-medium bg-white shadow-lg font-primary"
     >
       <a href="#" class="flex items-center flex-1 gap-2">
@@ -62,6 +78,7 @@
       </button>
 
       <ul
+        id="navigationItems"
         class="items-center justify-between flex-1 hidden gap-6 px-8 m-0 list-none md:flex"
       >
         <li>
@@ -135,6 +152,7 @@
           class="flex justify-start flex-1 w-full transition-all rounded-lg group hover:bg-gray-100 hover:border-gray-500 sm:flex md:hidden"
         >
           <button
+            id="electron"
             class="flex items-center gap-2 px-3 py-2 transition-all rounded-lg group-hover:text-sky-500 group-hover:bg-gray-100 group-hover:border-gray-500"
           >
             <img class="pr-1" src="../assets/asset 1.svg" alt="" />
@@ -157,7 +175,7 @@
           </button>
         </div>
       </ul>
-      <div class="justify-end flex-1 hidden lg:flex">
+      <div class="justify-end flex-1 hidden lg:flex" id="electronButton">
         <button
           class="flex items-center gap-2 px-6 py-2 transition-all border border-gray-400 rounded-lg hover:bg-gray-100 hover:border-gray-500"
         >
@@ -236,7 +254,7 @@
           </div>
           <div
             id="main-text"
-            class="pl-4 leading-tight mt-4 text-5xl md:text-5xl lg:text-6xl font-semibold md:leading-[4rem] text-gray-800 font-primary"
+            class="pl-4 overflow-hidden leading-tight mt-4 text-5xl md:text-5xl lg:text-6xl font-semibold md:leading-[4rem] text-gray-800 font-primary"
           >
             Web app to desktop app in minutes
           </div>
@@ -673,7 +691,7 @@
             </div>
           </div>
           <div
-            id="stepcontainer3"
+            id="stepcontainer2"
             class="flex flex-col min-w-full gap-6 px-6 py-6 mx-auto border border-gray-200 lg:items-center lg:flex-row rounded-xl"
           >
             <div
@@ -733,7 +751,7 @@
             </div>
           </div>
           <div
-            id="stepcontainer2"
+            id="stepcontainer3"
             class="flex flex-col min-w-full gap-6 px-6 py-6 mx-auto border border-gray-200 lg:items-center lg:flex-row rounded-xl"
           >
             <div

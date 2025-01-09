@@ -12,6 +12,11 @@ const heading = new SplitType("#main-text");
 //   document.getElementById("some").classList.toggle("hidden");
 // }
 
+document.querySelectorAll(".char").forEach((item) => {
+  item.style.transform = "translteY(115px)";
+  item.style.clipPath = "polygon(0 0, 100% 0, 100% 100%, 0% 100%);";
+});
+
 window.addEventListener("scroll", () => {
   document.getElementById("CompaniesList1").style.transform = `translateX(${
     window.scrollY / 3.14 - 160

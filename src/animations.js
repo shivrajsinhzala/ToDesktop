@@ -191,9 +191,9 @@ gsap.from("#customers-features", {
 
 gsap.from(".char", {
   y: 20,
-  duration: 0.05,
+  duration: 0.7,
   opacity: 0,
-  stagger: 0.03,
+  stagger: 0.02,
   delay: 0.5,
 });
 
@@ -215,3 +215,40 @@ document.addEventListener("mousemove", (e) => {
     duration: 1,
   });
 });
+
+// document.addEventListener("scroll", (e) => {
+//   console.log(e);
+//   gsap.to("body", {
+//     duration: 1,
+
+//     skewY: "8deg",
+//   });
+// });
+
+// function scrollDetect() {
+//   console.log("scrolling");
+//   var lastScroll = 0;
+
+//   window.onscroll = function () {
+//     let currentScroll = document.scrollTop || document.body.scrollTop; // Get Current Scroll Value
+
+//     if (currentScroll > 0 && lastScroll <= currentScroll) {
+//       lastScroll = currentScroll;
+//       gsap.to("body", {
+//         duration: 1,
+//         skewY: "8deg",
+//       });
+//       // document.getElementById("scrollLoc").innerHTML = "Scrolling DOWN";
+//     } else {
+//       lastScroll = currentScroll;
+//       // document.getElementById("scrollLoc").innerHTML = "Scrolling UP";
+//       gsap.to("body", {
+//         duration: 1,
+
+//         skewY: "-8deg",
+//       });
+//     }
+//   };
+// }
+
+// scrollDetect();
